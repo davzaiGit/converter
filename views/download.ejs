@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "base">
+        <form class="file-input" method="POST" action="/upload" enctype="multipart/form-data">
+            <h2>Upload File</h2>
+            <input type="file" name="input"></input>
+            <button type="submit">Convert</button>
+        </form>
+        <h2>Choose your size:</h2>
+        <div class = "image-col">
+            <div class = "small">
+                <p>100px</p>
+                <img src = <%= link1 %>></img>
+                <a href=<%= link1 %> class="button" download>Download</a>
+
+            </div>
+            <div class = "medium">
+                <p>200px</p>
+                <img src = <%= link2 %>></img>
+                <a href=<%= link2 %> class="button" download>Download</a>
+            </div>
+            <div class = "big">
+                <p>400px</p>
+                <img src = <%= link3 %>></img>
+                <a href=<%= link3 %> class="button" download>Download</a>
+
+            </div>
+        </div>
+    </div>
+</body>
